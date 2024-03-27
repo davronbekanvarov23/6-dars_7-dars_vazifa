@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5_oy_7_dars</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Random Word Game</h1>
+      <h3 id="random__word"></h3>
+
+      <input id="random_word_input" type="text" />
+
+      <p>Score: <span id="user__score">0</span></p>
+      <p>Time: <span id="user__time">10s</span></p>
+    </div>
+
+    <div class="modal hidden" id="modal">
+      <h3>GAME OVER</h3>
+      <p>Score: <span id="result">0</span></p>
+      <button class="btn" id="retry-btn">Retry</button>
+    </div>
+
+    <div class="modal start-btn" id="modal-start">
+      <select name="" id="change_level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button class="btn"  id="btn-start">Start</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
